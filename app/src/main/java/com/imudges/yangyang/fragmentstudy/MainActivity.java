@@ -74,34 +74,34 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                     Toast.makeText(MainActivity.this, "有问题啦", Toast.LENGTH_SHORT).show();
 
                 } else if (!mainFragment.isAdded()) {
-                    fragmentTransaction.add(R.id.id_content, mainFragment).commit();
+                    fragmentTransaction.add(R.id.id_content, mainFragment);
                 }
-                fragmentTransaction.show(mainFragment);
+                fragmentTransaction.show(mainFragment).commit();
                 break;
             case 1:
                 if (friendFragment == null) {
                     Toast.makeText(MainActivity.this, "有问题啦", Toast.LENGTH_SHORT).show();
                 } else if (!friendFragment.isAdded()) {
-                    fragmentTransaction.add(R.id.id_content, friendFragment).commit();
+                    fragmentTransaction.add(R.id.id_content, friendFragment);
                 }
-                fragmentTransaction.show(friendFragment);
+                fragmentTransaction.show(friendFragment).commit();
                 break;
             case 2:
                 if (addressFragment == null) {
                     Toast.makeText(MainActivity.this, "有问题啦", Toast.LENGTH_SHORT).show();
 
                 } else if (!addressFragment.isAdded()) {
-                    fragmentTransaction.add(R.id.id_content, addressFragment).commit();
+                    fragmentTransaction.add(R.id.id_content, addressFragment);
                 }
-                fragmentTransaction.show(addressFragment);
+                fragmentTransaction.show(addressFragment).commit();
                 break;
             case 3:
                 if (settingFragment == null) {
                     Toast.makeText(MainActivity.this, "有问题啦", Toast.LENGTH_SHORT).show();
                 } else if (!settingFragment.isAdded()) {
-                    fragmentTransaction.add(R.id.id_content, settingFragment).commit();
+                    fragmentTransaction.add(R.id.id_content, settingFragment);
                 }
-                fragmentTransaction.show(settingFragment);
+                fragmentTransaction.show(settingFragment).commit();
                 break;
             default:
                 break;
